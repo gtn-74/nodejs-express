@@ -10,3 +10,13 @@ express-generator は、Express フレームワークを使用するプロジェ
 npmパッケージとはnpm (Node Package Manager) で導入できるパッケージのことで、 Node.jsの開発を助けるプログラムのかたまりのようなものです。
 
 ```
+
+
+
+```javascript
+<!-- 
+<% for(let 呼び出した要素を格納する変数名 of リスト){ %>
+  処理内容
+<% } %> -->
+
+```

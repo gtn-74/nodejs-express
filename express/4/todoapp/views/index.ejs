@@ -8,11 +8,20 @@
     <h1><%= title %></h1>
     <p>Welcome to <%= title %></p>
     <body>
+      <!-- methodを明示することでpostとなる -->
       <form action="/" method="post">
         <label>タスクの追加</label>
         <input required type="text" name="add" placeholder="何をする?"/>
         <input type="submit" value="追加"/>
       </form>
+      <ul>
+        <% for(let todo of todos){ %>
+          <!-- !定数から取り出して表示させる時、ejsは、`=`が必要みたい -->
+          <li><span><%= todo %></span></li>
+          <% } %>
+      </ul>
       </body>
   </body>
 </html>
+
+<!-- ポスト内容の送信先を紐づけてあげないと404を吐く -->
